@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -74,16 +73,31 @@ func TestMakeQuery(t *testing.T) {
 
 	gotURL := GetUntappedHost()
 	SetClientAuthString(gotURL)
-	AddBeerSearchQuery(gotURL, "Bourbon County Brand Stout")
+	GetBeerInfo(gotURL, 1)
 
 	got, err := MakeQuery(gotURL)
 	assert.NoError(t, err)
 
+	want := Beer{
+		BID:      1,
+		BeerName: "Hocus Pocus",
+		BeerSlug: "magic-hat-brewing-company-hocus-pocus",
+	}
+
+	var v struct {
+		Response struct {
+			Beer Beer `json:"beer"`
+		} `json:"response"`
+	}
+
 	body, err := ioutil.ReadAll(got.Body)
-	dst := &bytes.Buffer{}
-	if err := json.Indent(dst, body, "", " "); err != nil {
+	beer := &v
+	if err := json.Unmarshal(body, beer); err != nil {
 		t.Fatal(err)
 	}
-	t.Log(dst)
+
+	assert.Equal(t, want.BID, beer.Response.Beer.BID)
+	assert.Equal(t, want.BeerName, beer.Response.Beer.BeerName)
+	assert.Equal(t, want.BeerSlug, beer.Response.Beer.BeerSlug)
 
 }
