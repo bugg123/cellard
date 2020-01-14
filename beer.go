@@ -11,6 +11,10 @@ import (
 const beerSearchPath = "v4/search/beer"
 const beerInfoPath = "v4/beer/info/"
 
+type BeerService struct {
+	client *Client
+}
+
 type Beer struct {
 	BID             float64 `json:"bid"`
 	BeerName        string  `json:"beer_name"`
