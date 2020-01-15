@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 	"net/url"
 	"strconv"
@@ -59,7 +58,6 @@ func (b *BeerService) SearchBeerQuery(query string, limit int) (*[]Beer, error) 
 	q.Add("q", query)
 	q.Add("limit", strconv.Itoa(limit))
 	req.URL.RawQuery = q.Encode()
-	fmt.Println(req)
 
 	var v struct {
 		Response struct {

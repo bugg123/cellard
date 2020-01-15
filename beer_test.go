@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -15,13 +14,10 @@ func TestAddBeerSearchQuery(t *testing.T) {
 		beers, err := c.Beer.SearchBeerQuery(searchString, 10)
 		assert.NoError(t, err)
 
-		fmt.Println("Searched: Bourbon County Brand Stout (2019)")
-
 		//Check default limit is returned
 		assert.Len(t, *beers, 10)
 		var bcbs Beer
 		for _, beer := range *beers {
-			fmt.Printf("Found beer: %s with ID: %f\n", beer.BeerName, beer.BID)
 			if int(beer.BID) == 3507187 {
 				bcbs = beer
 			}
