@@ -1,4 +1,4 @@
-module github.com/bugg123/cellerd
+module github.com/bugg123/cellard
 
 go 1.13
 
