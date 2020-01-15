@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"errors"
 	"io"
 	"net/http"
 	"net/url"
@@ -70,6 +71,17 @@ func (c *Client) do(req *http.Request, v interface{}) (*http.Response, error) {
 	}
 	defer resp.Body.Close()
 
+	if err := checkResponse(resp); err != nil {
+		return resp, err
+	}
+
 	err = json.NewDecoder(resp.Body).Decode(v)
 	return resp, err
+}
+
+func checkResponse(resp *http.Response) error {
+	if resp.StatusCode != http.StatusOK {
+		return errors.New("Didn't recieve StatusOK from response")
+	}
+	return nil
 }
