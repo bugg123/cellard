@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"net/http"
 	"net/url"
-	"os"
+	"strconv"
 )
 
 const beerSearchPath = "v4/search/beer"
@@ -30,29 +29,58 @@ type Beer struct {
 	WishList        bool    `json:"wish_list"`
 }
 
-func GetUntappedHost() *url.URL {
-	apiURL, err := url.Parse("https://api.untappd.com")
+func (b *BeerService) GetBeerInfo(beerID int) (*Beer, error) {
+	req, err := b.client.newRequest(http.MethodGet, beerInfoPath+strconv.Itoa(beerID), nil)
 	if err != nil {
-		log.Fatal(err)
+		return nil, err
 	}
-	return apiURL
+
+	var v struct {
+		Response struct {
+			Beer Beer `json:"beer"`
+		} `json:"response"`
+	}
+	_, err = b.client.do(req, &v)
+	if err != nil {
+		return nil, err
+	}
+
+	return &v.Response.Beer, nil
 }
 
-func GetClientAuthString() string {
-	return fmt.Sprintf("?client_id=%s&client_secret=%s", os.Getenv("CLIENT_ID"), os.Getenv("CLIENT_SECRET"))
-}
+func (b *BeerService) SearchBeerQuery(query string, limit int) (*[]Beer, error) {
 
-func SetClientAuthString(givenURL *url.URL) {
-	q := givenURL.Query()
-	q.Add("client_id", os.Getenv("CLIENT_ID"))
-	q.Add("client_secret", os.Getenv("CLIENT_SECRET"))
+	req, err := b.client.newRequest(http.MethodGet, beerSearchPath, nil)
+	if err != nil {
+		return nil, err
+	}
 
-	givenURL.RawQuery = q.Encode()
-}
+	q := req.URL.Query()
+	q.Add("q", query)
+	q.Add("limit", strconv.Itoa(limit))
+	req.URL.RawQuery = q.Encode()
+	fmt.Println(req)
 
-func GetBeerInfo(givenURL *url.URL, beerID int) {
-	givenURL.Path = fmt.Sprintf(beerInfoPath+"%d", beerID)
+	var v struct {
+		Response struct {
+			Beers struct {
+				Items []struct {
+					Beer Beer `json:"beer"`
+				} `json:"items"`
+			} `json:"beers"`
+		}
+	}
 
+	_, err = b.client.do(req, &v)
+	if err != nil {
+		return nil, err
+	}
+	var beers []Beer
+	for _, item := range v.Response.Beers.Items {
+		beers = append(beers, item.Beer)
+	}
+
+	return &beers, nil
 }
 
 func AddBeerSearchQuery(givenURL *url.URL, search string) {
