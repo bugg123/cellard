@@ -1,6 +1,8 @@
 package main
 
 import (
+	"net/http"
+	"strings"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -52,4 +54,22 @@ func TestGetBeerInfo(t *testing.T) {
 	assert.Equal(t, want.BeerName, got.BeerName)
 	assert.Equal(t, want.BeerSlug, got.BeerSlug)
 
+}
+
+func beerInfoTestClient(t *testing.T, fn func(t *testing.T, w http.ResponseWriter, r *http.Request)) (*Client, func()) {
+	return testClient(t, func(t *testing.T, w http.ResponseWriter, r *http.Request) {
+
+		if m := r.Method; m != http.MethodGet {
+			t.Fatalf("expected GET but got unexpected http method: %q", m)
+		}
+
+		prefix := "/v4/beer/info/"
+		if p := r.URL.Path; !strings.HasPrefix(p, prefix) {
+			t.Fatalf("expected %q to have prefix %q", p, prefix)
+		}
+
+		if fn != nil {
+			fn(t, w, r)
+		}
+	})
 }
