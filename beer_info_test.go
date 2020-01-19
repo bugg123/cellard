@@ -1,6 +1,7 @@
 package main
 
 import (
+	"io/ioutil"
 	"net/http"
 	"strconv"
 	"strings"
@@ -17,7 +18,9 @@ func TestBeerInfo(t *testing.T) {
 		if p := r.URL.Path; p != path {
 			t.Fatalf("unexpected url path, got: %q want: %q", p, path)
 		}
-		w.Write(hocusPocusJSON)
+		infoJSON, err := ioutil.ReadFile("json/beer_info/beer_info.json")
+		assert.NoErrorf(t, err, "couldn't read JSON file %v", err)
+		w.Write(infoJSON)
 	})
 	defer done()
 
@@ -54,38 +57,3 @@ func beerInfoTestClient(t *testing.T, fn func(t *testing.T, w http.ResponseWrite
 		}
 	})
 }
-
-var hocusPocusJSON = []byte(`
-{
-	"meta": {
-		"code": 200,
-		"response_time": {
-			"time": 0,
-			"measure": "seconds"
-		}
-	},
-	"response":{
-		"beer":{
-			"bid":1,
-			"beer_name":"Hocus Pocus",
-			"beer_label":"https:\/\/untappd.akamaized.net\/site\/beer_logos\/beer-1_d4bd9_sm.jpeg",
-			"beer_label_hd":"https:\/\/untappd.akamaized.net\/site\/beer_logos_hd\/beer-1_55f47_hd.jpeg",
-			"beer_abv":4.5,
-			"beer_ibu":13,
-			"beer_description":"Our take on a classic summer ale. A toast to weeds, rays, and summer haze. A light, crisp ale for mowing lawns, hitting lazy fly balls, and communing with nature, Hocus Pocus is offered up as a summer sacrifice to cloudless days.\r\n\r\nIts malty sweetness finishes tart and crisp and is best appreciated with a wedge of orange.",
-			"beer_style":"Wheat Beer - American Pale Wheat",
-			"is_in_production":1,
-			"beer_slug":"magic-hat-brewing-company-hocus-pocus",
-			"is_homebrew":0,
-			"created_at":"Sat, 21 Aug 2010 14:26:35 +0000",
-			"rating_count":16935,
-			"rating_score":3.27881,
-			"stats":{
-				"total_count":23313,
-				"monthly_count":14,
-				"total_user_count":19541,
-				"user_count":0
-			}
-		}
-	}
-}`)
