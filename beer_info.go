@@ -5,6 +5,8 @@ import (
 	"strconv"
 )
 
+const beerInfoPath = "/v4/beer/info/"
+
 func (b *BeerService) GetBeerInfo(beerID int) (*Beer, error) {
 	req, err := b.client.newRequest(http.MethodGet, beerInfoPath+strconv.Itoa(beerID), nil)
 	if err != nil {
