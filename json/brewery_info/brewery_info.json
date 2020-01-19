@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "code": 200,
+    "response_time": {
+      "time": 0.227,
+      "measure": "seconds"
+    },
+    "init_time": {
+      "time": 0,
+      "measure": "seconds"
+    }
+  },
+  "notifications": [],
+  "response": {
+    "brewery": {
+      "brewery_id": 1,
+      "brewery_name": "(512) Brewing Company",
+      "brewery_slug": "512-brewing-company",
+      "brewery_page_url": "/512Brewing",
+      "brewery_label": "https://untappd.akamaized.net/site/brewery_logos/brewery-1_8ccec.jpeg",
+      "brewery_label_hd": "",
+      "country_name": "United States",
+      "brewery_in_production": 0,
+      "is_independent": 1,
+      "claimed_status": {
+        "is_claimed": true,
+        "claimed_slug": "512Brewing",
+        "follow_status": false,
+        "follower_count": 9555,
+        "uid": 348761,
+        "mute_status": "none"
+      },
+      "beer_count": 175,
+      "contact": {
+        "twitter": "512brewing",
+        "facebook": "https://www.facebook.com/512brewing",
+        "instagram": "512brewing",
+        "url": "http://512brewing.com"
+      },
+      "brewery_type": "Micro Brewery",
+      "brewery_type_id": 2,
+      "location": {
+        "brewery_address": "407 Radam Ln",
+        "brewery_city": "Austin",
+        "brewery_state": "TX",
+        "brewery_lat": 30.2236,
+        "brewery_lng": -97.7697
+      },
+      "rating": {
+        "count": 165540,
+        "rating_score": 3.813
+      },
+      "brewery_description": "The original practice of consuming fresh draft beer at local bars and restaurants, enjoying the sensation of the glass and the pour, exchanging with the publican and taking in the surrounding atmosphere has been nearly lost. Throw in very fresh beer made in small handcrafted batches from nearby and you have a truly unique experience. (512) beers are built on old world English and Belgian styles, enhanced to celebrate bold domestic ingredients. Made with Austin’s mineral rich water and USDA Organic base malts, (512) beers taste like none other.",
+      "stats": {
+        "total_count": 252769,
+        "unique_count": 86078,
+        "monthly_count": 1390,
+        "weekly_count": 136,
+        "user_count": 0,
+        "age_on_service": 3388.765138888889
+      },
+      "owners": {
+        "count": 0,
+        "items": []
+      },
+      "locations": {
+        "count": 1,
+        "items": [
+          {
+            "venue": {
+              "venue_id": 7840,
+              "venue_name": "(512) Brewing Company",
+              "venue_slug": "512-brewing-company",
+              "primary_category_key": "Nightlife Spot",
+              "primary_category": "Nightlife Spot",
+              "parent_category_id": "4d4b7105d754a06376d81259",
+              "categories": {
+                "count": 1,
+                "items": [
+                  {
+                    "category_key": "brewery",
+                    "category_name": "Brewery",
+                    "category_id": "50327c8591d4c4b30a586d5d",
+                    "is_primary": true
+                  }
+                ]
+              },
+              "location": {
+                "venue_address": "407 Radam Ln Ste F200",
+                "venue_city": "Austin",
+                "venue_state": "TX",
+                "venue_country": "United States",
+                "lat": 30.2229,
+                "lng": -97.77
+              },
+              "contact": {
+                "twitter": "@512brewing",
+                "venue_url": "http://www.512brewing.com"
+              },
+              "foursquare": {
+                "foursquare_id": "49c534ecf964a520e8561fe3",
+                "foursquare_url": "http://4sq.com/c9wgvN"
+              },
+              "venue_icon": {
+                "sm": "https://ss3.4sqi.net/img/categories_v2/food/brewery_bg_64.png",
+                "md": "https://ss3.4sqi.net/img/categories_v2/food/brewery_bg_88.png",
+                "lg": "https://ss3.4sqi.net/img/categories_v2/food/brewery_bg_512.png"
+              },
+              "is_verified": false
+            }
+          }
+        ]
+      }
+    }
+  }
+}
