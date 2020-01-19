@@ -6,8 +6,8 @@ import (
 	"strconv"
 )
 
-const beerSearchPath = "v4/search/beer"
-const beerInfoPath = "v4/beer/info/"
+const beerSearchPath = "/v4/search/beer"
+const beerInfoPath = "/v4/beer/info/"
 
 type BeerService struct {
 	client *Client
@@ -26,25 +26,6 @@ type Beer struct {
 	InProduction    float64 `json:"in_production"`
 	AuthRating      float64 `json:"auth_rating"`
 	WishList        bool    `json:"wish_list"`
-}
-
-func (b *BeerService) GetBeerInfo(beerID int) (*Beer, error) {
-	req, err := b.client.newRequest(http.MethodGet, beerInfoPath+strconv.Itoa(beerID), nil)
-	if err != nil {
-		return nil, err
-	}
-
-	var v struct {
-		Response struct {
-			Beer Beer `json:"beer"`
-		} `json:"response"`
-	}
-	_, err = b.client.do(req, &v)
-	if err != nil {
-		return nil, err
-	}
-
-	return &v.Response.Beer, nil
 }
 
 func (b *BeerService) SearchBeerQuery(query string, limit int) (*[]Beer, error) {
@@ -88,9 +69,4 @@ func AddBeerSearchQuery(givenURL *url.URL, search string) {
 	q.Add("q", search)
 	givenURL.RawQuery = q.Encode()
 
-}
-
-func MakeQuery(givenURL *url.URL) (*http.Response, error) {
-	resp, err := http.Get(givenURL.String())
-	return resp, err
 }
