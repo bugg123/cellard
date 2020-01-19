@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "code": 200,
+    "response_time": {
+      "time": 0.083,
+      "measure": "seconds"
+    },
+    "init_time": {
+      "time": 0,
+      "measure": "seconds"
+    }
+  },
+  "notifications": [],
+  "response": {
+    "message": "",
+    "time_taken": 0.035,
+    "brewery_id": 0,
+    "search_type": "",
+    "type_id": 0,
+    "search_version": 4,
+    "found": 10,
+    "offset": 0,
+    "limit": 10,
+    "term": "Bourbon County Brand Stout (2019)",
+    "parsed_term": "Bourbon County Brand Stout (2019)",
+    "beers": {
+      "count": 5,
+      "items": [
+        {
+          "checkin_count": 34213,
+          "have_had": false,
+          "your_count": 0,
+          "beer": {
+            "bid": 3507187,
+            "beer_name": "Bourbon County Brand Stout (2019) 14.7%",
+            "beer_label": "https://untappd.akamaized.net/site/beer_logos/beer-3200860_3e2be_sm.jpeg",
+            "beer_abv": 14.7,
+            "beer_slug": "goose-island-beer-co-bourbon-county-brand-stout-2019-147",
+            "beer_ibu": 60,
+            "beer_description": "This year’s Bourbon County Stout, aged in a mix of Heaven Hill, Buffalo Trace, and Wild Turkey barrels, yields a rich, complex mouthfeel. Flavors of cocoa, fudge, vanilla, caramel, almond, plus leather and tobacco, permeate this beer and deepen with each sip. We’ve bottled Bourbon County Stout for 15 years and this year’s vintage is one that you will want to hold on to for years to come.",
+            "created_at": "Wed, 30 Oct 2019 23:06:41 +0000",
+            "beer_style": "Stout - American Imperial / Double",
+            "in_production": 1,
+            "auth_rating": 0,
+            "wish_list": false
+          },
+          "brewery": {
+            "brewery_id": 2898,
+            "brewery_name": "Goose Island Beer Co.",
+            "brewery_slug": "goose-island-beer-co",
+            "brewery_page_url": "/gooseisland",
+            "brewery_type": "Macro Brewery",
+            "brewery_label": "https://untappd.akamaized.net/site/brewery_logos/brewery-2898_7ee53.jpeg",
+            "country_name": "United States",
+            "contact": {
+              "twitter": "GooseIsland",
+              "facebook": "https://m.facebook.com/Goose-Island-157863547303/",
+              "instagram": "gooseisland",
+              "url": "http://www.gooseisland.com/"
+            },
+            "location": {
+              "brewery_city": "Chicago",
+              "brewery_state": "IL",
+              "lat": 41.8871,
+              "lng": -87.6721
+            },
+            "brewery_active": 1
+          }
+        },
+        {
+          "checkin_count": 22992,
+          "have_had": false,
+          "your_count": 0,
+          "beer": {
+            "bid": 3477556,
+            "beer_name": "Bourbon County Brand Café de Olla Stout (2019)",
+            "beer_label": "https://untappd.akamaized.net/site/beer_logos/beer-3477556_d9d23_sm.jpeg",
+            "beer_abv": 13.5,
+            "beer_slug": "goose-island-beer-co-bourbon-county-brand-cafe-de-olla-stout-2019",
+            "beer_ibu": 0,
+            "beer_description": "Created in partnership with our next door neighbors, Intelligentsia Coffee, Café de Olla is inspired by the traditional Mexican beverage of the same name. We added coffee beans and cold coffee to Original Bourbon County Stout and then enhanced this beer further through additions of cassia bark, orange peel, and panela sugar. The resulting beer is layered in complexity. Coffee and orange permeate the nose and are followed by notes of cinnamon, chocolate, and a pleasant sweetness.",
+            "created_at": "Sat, 12 Oct 2019 12:54:09 +0000",
+            "beer_style": "Stout - Imperial / Double",
+            "in_production": 1,
+            "auth_rating": 0,
+            "wish_list": false
+          },
+          "brewery": {
+            "brewery_id": 2898,
+            "brewery_name": "Goose Island Beer Co.",
+            "brewery_slug": "goose-island-beer-co",
+            "brewery_page_url": "/gooseisland",
+            "brewery_type": "Macro Brewery",
+            "brewery_label": "https://untappd.akamaized.net/site/brewery_logos/brewery-2898_7ee53.jpeg",
+            "country_name": "United States",
+            "contact": {
+              "twitter": "GooseIsland",
+              "facebook": "https://m.facebook.com/Goose-Island-157863547303/",
+              "instagram": "gooseisland",
+              "url": "http://www.gooseisland.com/"
+            },
+            "location": {
+              "brewery_city": "Chicago",
+              "brewery_state": "IL",
+              "lat": 41.8871,
+              "lng": -87.6721
+            },
+            "brewery_active": 1
+          }
+        },
+        {
+          "checkin_count": 20561,
+          "have_had": false,
+          "your_count": 0,
+          "beer": {
+            "bid": 3368645,
+            "beer_name": "Bourbon County Brand Mon Chéri Stout (2019)",
+            "beer_label": "https://untappd.akamaized.net/site/beer_logos/beer-3368645_f4a9c_sm.jpeg",
+            "beer_abv": 14.1,
+            "beer_slug": "goose-island-beer-co-bourbon-county-brand-mon-cheri-stout-2019",
+            "beer_ibu": 0,
+            "beer_description": "“Mon Chéri” means “my darling” in French and this recipe is a love letter from our brewer, Quinn, to his wife who loves cherries. Mon Chéri Stout is made with Balenton and Montmorency cherries, brewed with oats and a dash of brown sugar creating aromas of amaretto and almond. With one sip you’ll instantly get flavors of cherry cobbler, vanilla, and chocolate, followed by a silky, velvety finish.",
+            "created_at": "Mon, 05 Aug 2019 13:23:28 +0000",
+            "beer_style": "Stout - Imperial / Double",
+            "in_production": 1,
+            "auth_rating": 0,
+            "wish_list": false
+          },
+          "brewery": {
+            "brewery_id": 2898,
+            "brewery_name": "Goose Island Beer Co.",
+            "brewery_slug": "goose-island-beer-co",
+            "brewery_page_url": "/gooseisland",
+            "brewery_type": "Macro Brewery",
+            "brewery_label": "https://untappd.akamaized.net/site/brewery_logos/brewery-2898_7ee53.jpeg",
+            "country_name": "United States",
+            "contact": {
+              "twitter": "GooseIsland",
+              "facebook": "https://m.facebook.com/Goose-Island-157863547303/",
+              "instagram": "gooseisland",
+              "url": "http://www.gooseisland.com/"
+            },
+            "location": {
+              "brewery_city": "Chicago",
+              "brewery_state": "IL",
+              "lat": 41.8871,
+              "lng": -87.6721
+            },
+            "brewery_active": 1
+          }
+        },
+        {
+          "checkin_count": 6832,
+          "have_had": false,
+          "your_count": 0,
+          "beer": {
+            "bid": 3545907,
+            "beer_name": "Bourbon County Brand Stout (2019) 15.2%",
+            "beer_label": "https://untappd.akamaized.net/site/beer_logos/beer-8343_f9b52_sm.jpeg",
+            "beer_abv": 15.2,
+            "beer_slug": "goose-island-beer-co-bourbon-county-brand-stout-2019-152",
+            "beer_ibu": 60,
+            "beer_description": "",
+            "created_at": "Sat, 23 Nov 2019 19:17:24 +0000",
+            "beer_style": "Stout - American Imperial / Double",
+            "in_production": 1,
+            "auth_rating": 0,
+            "wish_list": false
+          },
+          "brewery": {
+            "brewery_id": 2898,
+            "brewery_name": "Goose Island Beer Co.",
+            "brewery_slug": "goose-island-beer-co",
+            "brewery_page_url": "/gooseisland",
+            "brewery_type": "Macro Brewery",
+            "brewery_label": "https://untappd.akamaized.net/site/brewery_logos/brewery-2898_7ee53.jpeg",
+            "country_name": "United States",
+            "contact": {
+              "twitter": "GooseIsland",
+              "facebook": "https://m.facebook.com/Goose-Island-157863547303/",
+              "instagram": "gooseisland",
+              "url": "http://www.gooseisland.com/"
+            },
+            "location": {
+              "brewery_city": "Chicago",
+              "brewery_state": "IL",
+              "lat": 41.8871,
+              "lng": -87.6721
+            },
+            "brewery_active": 1
+          }
+        },
+        {
+          "checkin_count": 6381,
+          "have_had": false,
+          "your_count": 0,
+          "beer": {
+            "bid": 3368648,
+            "beer_name": "Reserve Rye Bourbon County Brand Stout (2019)",
+            "beer_label": "https://untappd.akamaized.net/site/beer_logos/beer-3368648_3cf3d_sm.jpeg",
+            "beer_abv": 14.5,
+            "beer_slug": "goose-island-beer-co-reserve-rye-bourbon-county-brand-stout-2019",
+            "beer_ibu": 0,
+            "beer_description": "Our Reserve Bourbon County Stout releases showcase how a premium single source bourbon barrel can influence the nuances and flavors of our original BCS.The 2019 Reserve Rye is aged in 100% Rittenhouse Rye barrels - lovingly referred to as \"the bartender's favorite\" rye. Rittenhouse's Barrels had a unique effect on the original imperial stout, imparting flavors of fruit and spice. Reserve Rye accentuates all that makes Rittenhouse and Bourbon County unique.",
+            "created_at": "Mon, 05 Aug 2019 13:25:34 +0000",
+            "beer_style": "Stout - Imperial / Double",
+            "in_production": 1,
+            "auth_rating": 0,
+            "wish_list": false
+          },
+          "brewery": {
+            "brewery_id": 2898,
+            "brewery_name": "Goose Island Beer Co.",
+            "brewery_slug": "goose-island-beer-co",
+            "brewery_page_url": "/gooseisland",
+            "brewery_type": "Macro Brewery",
+            "brewery_label": "https://untappd.akamaized.net/site/brewery_logos/brewery-2898_7ee53.jpeg",
+            "country_name": "United States",
+            "contact": {
+              "twitter": "GooseIsland",
+              "facebook": "https://m.facebook.com/Goose-Island-157863547303/",
+              "instagram": "gooseisland",
+              "url": "http://www.gooseisland.com/"
+            },
+            "location": {
+              "brewery_city": "Chicago",
+              "brewery_state": "IL",
+              "lat": 41.8871,
+              "lng": -87.6721
+            },
+            "brewery_active": 1
+          }
+        }
+      ]
+    },
+    "homebrew": {
+      "count": 0,
+      "items": []
+    },
+    "breweries": {
+      "items": [],
+      "count": 0
+    }
+  }
+}
