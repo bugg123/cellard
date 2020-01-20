@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "code": 200,
+    "response_time": {
+      "time": 0.083,
+      "measure": "seconds"
+    },
+    "init_time": {
+      "time": 0,
+      "measure": "seconds"
+    }
+  },
+  "response": {
+    "venue": {
+      "venue_id": 1222,
+      "venue_name": "Untappd HQ - East",
+      "last_updated": "Fri, 21 Nov 2014 20:16:20 +0000",
+      "primary_category": "Residence",
+      "categories": {
+        "count": 2,
+        "items": [
+          {
+            "category_name": "Home (private)",
+            "category_id": "4bf58dd8d48988d103941735",
+            "is_primary": true
+          },
+          {
+            "category_name": "Tech Startup",
+            "category_id": "4bf58dd8d48988d125941735",
+            "is_primary": false
+          }
+        ]
+      },
+      "stats": {
+        "total_count": 371,
+        "user_count": 277,
+        "total_user_count": 16,
+        "monthly_count": 2,
+        "weekly_count": 0
+      },
+      "venue_icon": {
+        "sm": "https://ss3.4sqi.net/img/categories_v2/building/home_bg_64.png",
+        "md": "https://ss3.4sqi.net/img/categories_v2/building/home_bg_88.png",
+        "lg": "https://ss3.4sqi.net/img/categories_v2/building/home_bg_88.png"
+      },
+      "public_venue": false,
+      "location": {
+        "venue_address": "",
+        "venue_city": "",
+        "venue_state": "NY",
+        "venue_country": "United States",
+        "lat": 40.7559,
+        "lng": -73.9536
+      },
+      "contact": {
+        "twitter": "@untappd",
+        "venue_url": "http://untappd.com"
+      },
+      "foursquare": {
+        "foursquare_id": "4ccf5fec1ac7a1cd6a5c1392",
+        "foursquare_url": "http://4sq.com/boEpZE"
+      },
+      "media": {
+        "count": 1,
+        "items": {
+          "photo_id": 23707183,
+          "photo": {
+            "photo_img_sm": "https://d1c8v1qci5en44.cloudfront.net/photo/2014_11_12/eeba8143b434ee928a5dff42f6466283_100x100.jpg",
+            "photo_img_md": "https://d1c8v1qci5en44.cloudfront.net/photo/2014_11_12/eeba8143b434ee928a5dff42f6466283_320x320.jpg",
+            "photo_img_lg": "https://d1c8v1qci5en44.cloudfront.net/photo/2014_11_12/eeba8143b434ee928a5dff42f6466283_640x640.jpg",
+            "photo_img_og": "https://d1c8v1qci5en44.cloudfront.net/photo/2014_11_12/eeba8143b434ee928a5dff42f6466283_raw.jpg"
+          },
+          "created_at": "Wed, 12 Nov 2014 23:23:39 +0000",
+          "checkin_id": 129011782,
+          "beer": {
+            "bid": 4691,
+            "beer_name": "Heady Topper",
+            "beer_label": "https://d1c8v1qci5en44.cloudfront.net/site/beer_logos/beer-HeadyTopper_4691.jpeg",
+            "beer_abv": 8,
+            "beer_ibu": 100,
+            "beer_slug": "the-alchemist-heady-topper",
+            "beer_description": "We love hops – that’s why our flagship Double IPA, Heady Topper, is packed full of them. Heady Topper was designed to showcase the complex flavors and aromas these flowers produce. The Alchemist has been brewing Heady Topper since 2003. This Double IPA is not intended to be the strongest or most bitter DIPA. It is brewed to give you wave after wave of hop flavor without any astringent bitterness. We brew Heady Topper with a proprietary blend of six hops – each imparting its own unique flavor and aroma. Take a big sip of Heady and see what hop flavors you can pick out. Orange? Tropical Fruit? Pink Grapefruit? Pine? Spice? There is just enough malt to give this beer some backbone, but not enough to take the hops away from the center stage.",
+            "is_in_production": 1,
+            "beer_style_id": 227,
+            "beer_style": "Imperial / Double IPA",
+            "auth_rating": 0,
+            "wish_list": false,
+            "beer_active": 1
+          },
+          "brewery": {
+            "brewery_id": 1244,
+            "brewery_name": "The Alchemist",
+            "brewery_slug": "the-alchemist",
+            "brewery_label": "https://d1c8v1qci5en44.cloudfront.net/site/brewery_logos/brewery-TheAlchemistPubBrewery_1244.jpeg",
+            "country_name": "United States",
+            "contact": {
+              "twitter": "alchemistbeer",
+              "facebook": "https://www.facebook.com/alchemistbeer",
+              "url": "http://www.alchemistbeer.com/"
+            },
+            "location": {
+              "brewery_city": "Waterbury",
+              "brewery_state": "VT",
+              "lat": 44.3505,
+              "lng": -72.7438
+            },
+            "brewery_active": 1
+          },
+          "user": {
+            "uid": 1,
+            "user_name": "gregavola",
+            "first_name": "Greg",
+            "last_name": "A",
+            "user_avatar": "https://gravatar.com/avatar/0c6922e238dae5cccce96a32889fc911?size=100&d=htt…44.cloudfront.net%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1",
+            "relationship": "friends",
+            "is_private": 0
+          },
+          "venue": {
+            "venue_id": 1222,
+            "venue_name": "Untappd HQ - East",
+            "primary_category": "Residence",
+            "parent_category_id": "4e67e38e036454776db1fb3a",
+            "categories": {
+              "count": 2,
+              "items": [
+                {
+                  "category_name": "Home (private)",
+                  "category_id": "4bf58dd8d48988d103941735",
+                  "is_primary": true
+                },
+                {
+                  "category_name": "Tech Startup",
+                  "category_id": "4bf58dd8d48988d125941735",
+                  "is_primary": false
+                }
+              ]
+            },
+            "location": {
+              "venue_address": "",
+              "venue_city": "",
+              "venue_state": "NY",
+              "venue_country": "United States",
+              "lat": 40.7559,
+              "lng": -73.9536
+            },
+            "contact": {
+              "twitter": "@untappd",
+              "venue_url": "http://untappd.com"
+            },
+            "public_venue": false,
+            "foursquare": {
+              "foursquare_id": "4ccf5fec1ac7a1cd6a5c1392",
+              "foursquare_url": "http://4sq.com/boEpZE"
+            },
+            "venue_icon": {
+              "sm": "https://ss3.4sqi.net/img/categories_v2/building/home_bg_64.png",
+              "md": "https://ss3.4sqi.net/img/categories_v2/building/home_bg_88.png",
+              "lg": "https://ss3.4sqi.net/img/categories_v2/building/home_bg_88.png"
+            }
+          }
+        }
+      },
+      "top_beers": {
+        "offset": 0,
+        "limit": 15,
+        "count": 0,
+        "items": {
+          "created_at": "Sat, 22 Nov 2014 02:15:52 +0000",
+          "total_count": 1,
+          "your_count": 4,
+          "beer": {
+            "bid": 4691,
+            "beer_name": "Heady Topper",
+            "beer_label": "https://d1c8v1qci5en44.cloudfront.net/site/beer_logos/beer-HeadyTopper_4691.jpeg",
+            "beer_abv": 8,
+            "beer_ibu": 100,
+            "beer_slug": "the-alchemist-heady-topper",
+            "beer_description": "We love hops – that’s why our flagship Double IPA, Heady Topper, is packed full of them. Heady Topper was designed to showcase the complex flavors and aromas these flowers produce. The Alchemist has been brewing Heady Topper since 2003. This Double IPA is not intended to be the strongest or most bitter DIPA. It is brewed to give you wave after wave of hop flavor without any astringent bitterness. We brew Heady Topper with a proprietary blend of six hops – each imparting its own unique flavor and aroma. Take a big sip of Heady and see what hop flavors you can pick out. Orange? Tropical Fruit? Pink Grapefruit? Pine? Spice? There is just enough malt to give this beer some backbone, but not enough to take the hops away from the center stage.",
+            "is_in_production": 1,
+            "beer_style_id": 227,
+            "beer_style": "Imperial / Double IPA",
+            "auth_rating": 0,
+            "wish_list": false,
+            "beer_active": 1,
+            "rating_score": 4.682,
+            "rating_count": 52040
+          },
+          "brewery": {
+            "brewery_id": 1244,
+            "brewery_name": "The Alchemist",
+            "brewery_slug": "the-alchemist",
+            "brewery_label": "https://d1c8v1qci5en44.cloudfront.net/site/brewery_logos/brewery-TheAlchemistPubBrewery_1244.jpeg",
+            "country_name": "United States",
+            "contact": {
+              "twitter": "alchemistbeer",
+              "facebook": "https://www.facebook.com/alchemistbeer",
+              "url": "http://www.alchemistbeer.com/"
+            },
+            "location": {
+              "brewery_city": "Waterbury",
+              "brewery_state": "VT",
+              "lat": 44.3505,
+              "lng": -72.7438
+            },
+            "brewery_active": 1
+          },
+          "friends": {
+            "count": 0,
+            "items": []
+          }
+        }
+      }
+    }
+  }
+}
