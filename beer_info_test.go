@@ -25,7 +25,7 @@ func TestBeerInfo(t *testing.T) {
 	defer done()
 
 	//c := NewClient(nil)
-	got, err := c.Beer.GetBeerInfo(1)
+	got, err := c.Beer.GetBeerInfo(beerID)
 
 	want := Beer{
 		BID:      1,
@@ -47,9 +47,8 @@ func beerInfoTestClient(t *testing.T, fn func(t *testing.T, w http.ResponseWrite
 			t.Fatalf("expected GET but got unexpected http method: %q", m)
 		}
 
-		prefix := "/v4/beer/info/"
-		if p := r.URL.Path; !strings.HasPrefix(p, prefix) {
-			t.Fatalf("expected %q to have prefix %q", p, prefix)
+		if p := r.URL.Path; !strings.HasPrefix(p, beerInfoPath) {
+			t.Fatalf("expected %q to have prefix %q", p, beerInfoPath)
 		}
 
 		if fn != nil {
