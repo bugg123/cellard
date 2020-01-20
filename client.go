@@ -20,6 +20,7 @@ type Client struct {
 
 	Beer    *BeerService
 	Brewery *BreweryService
+	Venue   *VenueService
 }
 
 func NewClient(httpClient *http.Client) *Client {
@@ -33,6 +34,7 @@ func NewClient(httpClient *http.Client) *Client {
 
 	c.Beer = &BeerService{client: c}
 	c.Brewery = &BreweryService{client: c}
+	c.Venue = &VenueService{client: c}
 	return c
 }
 
